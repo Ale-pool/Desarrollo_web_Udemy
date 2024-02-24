@@ -1,0 +1,27 @@
+{
+    "Empleados" : [
+        {
+            "id" : "1",
+            "nombre" : "Alex",
+            "Puesto" : "Programador fullstack"
+        },
+
+        {
+            "id" : "2",
+            "Nombre" : "Carlos",
+            "Puesto" : "Programador Señior"
+        },
+
+        {
+            "id" : "3",
+            "Nombre" : "Maria",
+            "Puesto" : "Programador Junior"
+        },
+
+        {
+            "id" : "4",
+            "Nombre" : "Juana",
+            "Puesto" : "Servidores"
+        }
+    ]
+}

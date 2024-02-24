@@ -1,0 +1,301 @@
+/*Custom Propeties - valores que podemos reutilizar-*/
+:root
+{
+  --primario: #9C27B0;
+  --primarioOscuro: #89119D;
+  --secundario: #FFCE00;
+  --SecundarioOscuro: rgb(233,287,2);
+  --Blanco: #fff;
+  --negro: #000;
+
+  --FuentePrincipal: font-family: 'Staatliches', cursive;
+}
+
+/*Css globales no deberia falta en ningun proyecto - selectores universales-*/
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*GLOBALES*/
+
+body
+{
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p
+{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--Blanco);
+}
+
+a{
+    text-decoration: none;
+}
+
+img
+{
+    width: 90%;
+}
+
+.contenedor
+{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3
+{
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--FuentePrincipal);
+}
+
+h1{ font-size:  4rem;}
+
+h2{font-size:  3.2rem;}
+
+h3{font-size: 2.4rem;}
+
+/*----------------------------------------*/
+
+/*HEADER -dintaxis BEM-*/
+
+.header
+{
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo
+{
+    margin: 3rem 0 ;
+}
+
+.footer
+{
+   background-color: var(--primarioOscuro);
+   padding: 1rem 0;
+   margin-top: 2rem;
+
+}
+
+.footer__texto
+{
+ text-align: center;
+ font-family: var(--FuentePrincipal);
+ font-size: 2rem;
+}
+.navegacion
+{
+  background-color: var(--primarioOscuro);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;/* Separacion Forma nueva*/ 
+}
+
+.navegacion__enlace
+{
+   font-family: var(--FuentePrincipal);
+   color: var(--Blanco);
+   font-size: 3rem;
+  
+
+}
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover
+{
+    color: var(--secundario);
+}
+
+
+/*css grid*/
+
+.grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+}
+@media (min-width: 768px) {
+    .grid{
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
+/*PRODUCT*/
+
+.producto
+{
+  background-color: var(--primarioOscuro);
+  padding: 1rem;
+
+
+}
+
+
+.producto__nombre
+{
+ font-size: 4rem;
+}
+
+.producto__precio
+{
+  font-size: 2.8rem;
+  color: var(--secundario);
+}
+
+.producto__nombre,
+.producto__precio 
+{
+    font-family: var(--FuentePrincipal);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/*Graficos*/
+
+
+.grafico{
+  min-height: 30rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/3;
+}
+.grafico--camisas
+{
+    grid-row: 2/3;
+    background-image: url(../img/grafico1.png);
+    
+
+}
+
+
+.grafico--node{
+    background-image: url(../img/grafico2.png);
+     grid-row: 8/9;
+}
+@media (min-width: 760px) {
+   .grafico--node
+     {
+  grid-row: 5/6;
+  grid-column: 2/4;
+  }
+}
+ 
+
+/*OURS*/
+
+.nosotros{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+@media (min-width: 768px) {
+    .nosotros
+{
+  
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
+
+}
+
+.nosotros__imagen
+{
+   grid-row: 1/2;
+}
+
+@media (min-width: 768px) {
+    .nosotros__imagen
+{
+  grid-column: 2/3;
+}
+}
+
+/*Start Block*/
+
+.bloques
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .bloques{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.bloque
+{
+    text-align: center;
+
+}
+
+.bloque__titulo
+{
+    margin: 0;
+}
+
+/*PRODUCT*/
+
+@media (min-width: 758px) {
+   .camisa{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     column-gap: 2rem;
+} 
+}
+
+.formulario
+{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 2rem;
+}
+
+.formulario__campo
+{
+  border: 1rem solid  var(--primarioOscuro);
+  background-color: transparent;
+  color: var(--negro);
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  appearance: none;
+  /*border-width: 1rem;
+  border-style: solid;*/
+
+}
+
+.formulario__submit
+{
+     background-color: var(--secundario);
+     border: none;
+     font-size: 2rem;
+     font-family: var(--FuentePrincipal);
+     padding: 1.5rem;
+     transition: background-color .3s ease;
+     grid-column: 1/3;
+}
+
+.formulario__submit:hover
+{
+  cursor: pointer;
+  background-color: var(--SecundarioOscuro);
+  
+}

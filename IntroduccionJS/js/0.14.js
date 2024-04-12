@@ -1,10 +1,13 @@
 // arrays  - arreglos ( un ejemplo puede ser un carrito de compras)
 
 const numeros= [10,20,30,40,50];
+const notas = [4,5,2,1,3,5,2,5]
 //console.table(numeros)
-
+console.table(notas)
 const meses =['enero','Febrer0', 'Marzo','abril'];
 //console.table(meses);
+
+
 
 /* how to access the values of an array 
 
@@ -23,11 +26,11 @@ numeros.forEach( function(numeros) {
 
 // methods for the arrays push
 
-numeros.push(60, 63, 66) // agrega al final del arreglo
-numeros.unshift(-10,-20,-40) // agrega al inicio del arreglo 
+notas.push(60, 63, 66) // agrega al final del arreglo
+notas.unshift(-10,-20,-40) // agrega al inicio del arreglo 
 // Delete elements of arrays 
-//meses.pop() // elimina el ultimo elemento del arreglo
-//meses.shift() // elimina el primer elemento del arreglo
+notas.pop() // elimina el ultimo elemento del arreglo
+notas.shift() // elimina el primer elemento del arreglo
 //console.table(meses);
 // eliminar un elemento especifico del arreglo 
 //meses.splice(2,1)

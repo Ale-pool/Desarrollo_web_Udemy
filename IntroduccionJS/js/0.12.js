@@ -1,4 +1,4 @@
-"use strict"; // correr js en modo stricto 
+"use strict"; // correr js en modo estricto 
 // object methods 
 
 
@@ -11,10 +11,13 @@ const producto = {
     disponible : true
 }
 
-Object.freeze(producto); // permite no agregar nuevas variables al objecto
+Object.seal(producto); // permite no agregar nuevas variables al objecto
 
+console.log(producto)
+producto.nombre_producto = "Celular Phone-16"
+delete producto.talla
 // producto.imagen = 'imagen.jpg'
 
 // ckonsole.log(Object.isFrozen(producto))  // como saber si un metodo esta sellado;
-console.log(ise)
-console.log(producto)
+// console.log(ise)
+// console.log(producto)

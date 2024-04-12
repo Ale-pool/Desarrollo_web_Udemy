@@ -4,7 +4,11 @@
 const precio = 400;
 const disponible = true;*/
 
-
+const zapatos = {
+    nombre : "k-tenis",
+    talla: "M",
+    precio: 200
+}
 
 const producto = {
     nombre_producto : "computador HD",
@@ -20,7 +24,10 @@ console.log(producto)
 // agregar nuevas propiedades
 
 producto.imagen = 'imagen.jp'
-
+zapatos.color = "azul"
 // eliminar variables
 
 delete producto.disponible
+delete zapatos.talla
+console.log(zapatos)
+console.log(zapatos.precio)

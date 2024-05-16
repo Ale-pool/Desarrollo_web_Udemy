@@ -1,25 +1,24 @@
 
 
-// // LIFE
-
-// (function(){
-//     console.log("esto es una función")
-// })();
-
 // funciones en js - Declaracion de la función
 
-function sumar(){
+function multiplicar(){
     console.log(10*10);
 }
-sumar()
+multiplicar()
 
 
 // esprecion de la funcion
 
 const suma2 = function() {
-    console.log(3+3)
+    console.log(19+23)
 }
 suma2()
+  // // LIFE
+
+(function () {
+  console.log('Esta función se ejecuta inmediatamente.');
+})();
 
 
 // diferencias entre tipo de funciones 

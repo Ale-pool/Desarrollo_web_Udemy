@@ -1,56 +1,51 @@
+const colores = [ "Amarillo", "verde", "blanco", "negro", "azul" , "violeta", "rojo"]
 
-const meses =['enero','Febrer0', 'Marzo','abril','mayo'];
+// arreglo de objectos
+const productos = [
+  { nombre: 'telefono', Precio: 662, disponible: true },
+  { nombre: 'Tv', Precio: 123, disponible: true },
+  { nombre: 'equipo de sonido', Precio: 123, disponible: true },
+  { nombre: 'impresora', Precio: 342, disponible: true },
+];
 
-// arrays of abjects 
-const carrito = [
-    {nombre: 'monitor 20 pulgadas', precio: 500},
-    {nombre: 'table de 18 pulgadas', precio: 160},
-    {nombre: 'impresora Hp', precio: 420},
-    {nombre: 'telefono lenovo', precio: 382},
-    {nombre: 'equipo de audio', precio: 263},
-    {nombre: 'consola de videojuego', precio: 372},
-    {nombre: 'tablero', precio: 128},
-    {nombre :'nevera', precio:289}
-]
+console.log(productos)
 
-// // foreach
+console.log(productos.length)
+console.log(colores.length)
 
-//  meses.forEach( function (mes){
-//     console.log(mes);
-
-//  })
-
-
-
- meses.forEach(function(mes) {
-     if(mes == 'Marzo'){
-         console.log('marzo existe');
+// foreach
+colores.forEach(function(color){
+    if(color == "Amarillo"){
+        console.log("si esta el color ")
     }
- })
-
- // includes
-let resultado = meses.includes('mayo');
-
-// some ideal para algunos arreglos
-
-resultado = carrito.some(function(producto){
-    return producto.nombre === 'nevera'
 })
 
-// reduce
 
-resultado = carrito.reduce(function(total, producto){
-    return  total + producto.precio
-}, 0)
+// includes - para determinar si un array incluye un determinado elemento, y devuelve true o false en consecuencia
 
-// filter 
-
-resultado = carrito.filter(function(producto){
-    return producto.precio > 400;
-}) 
-
-resultado = carrito.filter(function(producto){
-    return producto.nombre !== 'impresora Hp'
-})
-
+const resultado = colores.includes("verde")
 console.log(resultado)
+
+// some ideal para arreglo de objectos
+
+// const result = productos.some(producto => producto.nombre === 'telefono')
+
+// console.log(result)
+
+
+// reduce se utiliza para reducir un array a un único valor, aplicando una función de reducción 
+// a cada elemento del array. La función de reducción toma dos argumentos: un acumulador y el elemento actual del array, y devuelve el valor resultante del acumulador después de aplicar alguna operación
+
+valor = productos.reduce((total, producto) => total + producto.Precio, 0);
+console.log(valor)
+
+
+// El método filter en JavaScript se utiliza para crear un nuevo array 
+// con todos los elementos que pasan una prueba implementada por una función proporcionada.
+
+result = productos.filter(producto =>{
+         return producto.nombre !== "impresora"
+});
+
+console.log(result)
+

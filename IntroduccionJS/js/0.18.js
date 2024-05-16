@@ -3,10 +3,10 @@
 // parametros por default
 
 
-function sumar(numero1, numero2){  // numero1 y numero2 son parametros 
+function producto(numero1, numero2){  // numero1 y numero2 son parametros 
     console.log(numero1 * numero2);
 }
-sumar(10,10) // argumentos o valores reales
+producto(50,50) // argumentos o valores reales
 // sumar(3,10)
 // sumar(2,10)
 // sumar(4,5)
@@ -23,4 +23,4 @@ function sumar(numero1=0, numero2=0){  // numero1 y numero2 son parametros
     console.log(numero1 * numero2);
 }
 
-sumar(2);
+sumar(9);

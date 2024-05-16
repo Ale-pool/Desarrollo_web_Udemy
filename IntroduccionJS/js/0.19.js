@@ -26,6 +26,7 @@ function calcularimpuesto(total){
 total = agregarcarrito(300)
 total = agregarcarrito(300)
 total = agregarcarrito(300)
+total = agregarcarrito(100)
 
 
 console.log(total);

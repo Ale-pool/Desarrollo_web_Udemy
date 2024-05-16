@@ -16,6 +16,19 @@ switch(metodopago){
         break;
     default:
         console.log("Aún no haz pagado")
-    
+}
 
+
+// uso del swtich en diferentes objectos o funciones
+const personajes = "avatar1";
+
+switch(personaje){
+    case "avatar1":
+        console.log("Es el personaje principal");
+        break;
+    case "avatar2":
+        console.log("Es el personaje secundario");
+        break;
+    case "avatar3":
+        console.log("es el personaje de visita");
 }

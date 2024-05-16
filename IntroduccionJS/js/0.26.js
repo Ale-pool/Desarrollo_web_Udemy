@@ -14,8 +14,8 @@ const reservacion = {
 
 // window.nombre = "albin"
 const reservacion2 = {
-    nombre : "maria",
-    apellido : "villa",
+    nombre : "juliana",
+    apellido : "olmedo",
     total: 1000,
     informacion : ()=>{
         console.log(`la cliente ${this.nombre} reservo y su cantidad a pagar es de ${this.total}`)

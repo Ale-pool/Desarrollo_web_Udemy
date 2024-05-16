@@ -99,3 +99,14 @@ if(rol == "Programador"){
 }else{
   console.log("NO tienes acceso al codigo fuente ")
 }
+
+
+const rol2 = "admin";
+
+if(rol2 == "admin"){
+  console.log("Tienes acceso a la base de datos");
+}else if (rol2 == "Programador"){
+  console.log("Falta permisos");
+}else {
+  console.log("Acceso denegado Totalmemte");
+}

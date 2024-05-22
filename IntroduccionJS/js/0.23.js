@@ -2,7 +2,7 @@
 // switch 
 
 
-const metodopago = "cheque"
+const metodopago = "cheque";
 
 switch(metodopago){
     case "Tarjeta":
@@ -22,7 +22,7 @@ switch(metodopago){
 // uso del swtich en diferentes objectos o funciones
 const personajes = "avatar1";
 
-switch(personaje){
+switch(personajes){
     case "avatar1":
         console.log("Es el personaje principal");
         break;

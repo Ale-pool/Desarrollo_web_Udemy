@@ -1,4 +1,5 @@
 
+
 // Extructuras de control
 
 /* 
@@ -70,24 +71,51 @@ for (let i = 0; i < 5; i++) {
  /* Igual compración ==  -- diferentes !==*/
 
 
-// const puntaje = 1000;
-
-// if(puntaje == 1000){
-//   console.log("Si el puntaje es el correcto")
-// }else {
-//    console.log("No es igual ")
-// }
+// if -- como condicional
 
 
+const edad = 19;
 
-// const efectivo = 8000;
-// const carrito = 7000;
+if (edad >= 18) {
+  console.log("eres mayor de edad");
+}else {
+  console.log("eres menor de edad");
+}
 
-// if(efectivo > carrito){
-//   console.log("Puedes comprarlo");
-// }else{
-//   console.log("fondos insuficientes");
-// }
+// elif
+
+nota = 4
+
+if (nota == 5){
+  console.log("muy bien")
+} else if (nota === 4 || nota === 3){
+  console.log("bien")
+}else {
+  console.log("mal, tienes que mejorar")
+}
+
+
+const tienePermiso = false;
+const tienePase = true;
+
+if (tienePermiso || tienePase) {
+  console.log('Acceso permitido.');
+} else {
+  console.log('Acceso denegado.');
+}
+
+
+
+const edad2 = 16;
+const tienePermisoPadres = false;
+tieneLicencia = true;
+
+if ((edad2 >= 18 && tieneLicencia) || (edad2 < 18 && tienePermisoPadres)) {
+  console.log('Puedes conducir.');
+} else {
+  console.log('No puedes conducir.');
+}
+// ========================================
 
 
 const rol = "Programador";
@@ -109,4 +137,16 @@ if(rol2 == "admin"){
   console.log("Falta permisos");
 }else {
   console.log("Acceso denegado Totalmemte");
+}
+
+// ========================================
+
+
+// Blucle for
+
+const num = 30;
+const numvalor = parseInt(num);
+
+for (let i = 0; i < numvalor; i++) {
+  console.log(i);
 }

@@ -35,10 +35,36 @@ class Libro extends Producto{
 
 const libro1 = new Libro ("La venganza de la rata",1200,993929329)
 const producto1 = new Producto("monitor HD", 500);
-const producto2 = new Producto("tablet", 700);
 
-console.log(libro1.formatearProducto())
 // console.log(producto1);
 // console.log(producto2);
 // console.log(producto2.formatearProducto())
 // console.log(producto1.retonarprecio())
+
+
+class Motos{
+  constructor(nombre,precio){
+    this.precio = precio;
+    this.nombre = nombre;
+  }
+  validarMoto(){
+    console.log(`la moto con el nombre ${this.nombre} tiene un valor de ${this.precio}`)
+  }
+  Validarprecio(){
+      console.log(this.precio)
+  }
+}
+
+class Bicicletas extends Motos{
+  constructor(nombre, precio){
+    super(nombre,precio)
+  }
+}
+
+const Moto1 = new Motos("FZ25-ABS", "$14.950.000")
+const Moto2 = new Motos("YCZ", '6.600.000')
+
+console.log(Moto2.validarMoto())
+
+console.log(Moto1.Validarprecio())
+

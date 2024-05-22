@@ -2,9 +2,9 @@
 // iteradores for // while // do while 
 
 
-// for(let num=0; num<10; num++){
-//     console.log(num)
-// }
+for(let num=10; num<101; num+=10){
+    console.log(num)
+}
 
 // for( let i=1;i<=100; i++ ){
 //     if(i % 2 === 0){
@@ -15,20 +15,20 @@
 
 // }
 
-// const carrito = [
-//     {nombre: 'monitor 20 pulgadas', precio: 500},
-//     {nombre: 'table de 18 pulgadas', precio: 160},
-//     {nombre: 'impresora Hp', precio: 420},
-//     {nombre: 'telefono lenovo', precio: 382},
-//     {nombre: 'equipo de audio', precio: 263},
-//     {nombre: 'consola de videojuego', precio: 372},
-//     {nombre: 'tablero', precio: 428},
-//     {nombre :'nevera', precio:289}
-// ]
+const carrito = [
+    {nombre: 'monitor 20 pulgadas', precio: 500},
+    {nombre: 'table de 18 pulgadas', precio: 160},
+    {nombre: 'impresora Hp', precio: 420},
+    {nombre: 'telefono lenovo', precio: 382},
+    {nombre: 'equipo de audio', precio: 263},
+    {nombre: 'consola de videojuego', precio: 372},
+    {nombre: 'tablero', precio: 428},
+    {nombre :'nevera', precio:289}
+]
 
-// for( let i=0; i< carrito.length; i++){
-//     console.log(carrito[i].nombre)
-// }
+for( let i=0; i< carrito.length; i++){
+    console.log(carrito[i].nombre)
+}
 
 
 // ejercicio fitt buzz
@@ -63,12 +63,14 @@
 // do while loop
 
 
-let i=1;
+let i =100;
 
-do{
+do {
    console.log(i)
-}while(i<10);
+   
+}while(i <10)
 
+   
 
 
 

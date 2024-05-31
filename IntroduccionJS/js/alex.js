@@ -1,5 +1,8 @@
 
 
+
+
+
 // function carros (color, precio, cilindros){
 //   this.color = color;
 //   this.precio = precio;
@@ -55,30 +58,30 @@
 // miPerro.ladrar();  // Imprime: ¡Guau, guau!
 
 
-class Animal2 {
-  constructor(nombre) {
-    this.nombre = nombre;
-  }
+// class Animal2 {
+//   constructor(nombre) {
+//     this.nombre = nombre;
+//   }
 
-  saludar(){
-    console.log(`Hola soy ${this.nombre}` )
-  }
-}
+//   saludar(){
+//     console.log(`Hola soy ${this.nombre}` )
+//   }
+// }
 
-// clase derivada
+// // clase derivada
 
-class Gato extends Animal2{
-  constructor(nombre,tipo){
-    super(nombre);
-    this.tipo = tipo;
-  }
-  maullar(){
-    console.log('Miau, miau, miau');
-  }
-}
+// class Gato extends Animal2{
+//   constructor(nombre,tipo){
+//     super(nombre);
+//     this.tipo = tipo;
+//   }
+//   maullar(){
+//     console.log('Miau, miau, miau');
+//   }
+// }
 
-// creando instancias
+// // creando instancias
 
-const migato = new Gato('pelos','siames');
-migato.saludar();
-migato.maullar();
+// const migato = new Gato('pelos','siames');
+// migato.saludar();
+// migato.maullar();

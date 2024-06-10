@@ -14,20 +14,6 @@ const medidas = {
 }
 
 
-const mesa = {
-    Nombre : "mesa antigua",
-    peso: "mediana",
-    Altura: 30,
-    disponibilidad: true
-}
-
-
-const silla = {
-    color: "azulado",
-    peso: 10,
-    origen: "colombia",
-    disponibilidad: true
-}
 // unir
 
 const objectocasa = {...mesa, ...silla}

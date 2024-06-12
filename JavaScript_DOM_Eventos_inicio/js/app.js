@@ -1,31 +1,34 @@
 
 // como seleccionar contenido- las tres mas comunes son: queryselector - queryselectorAll - getelemetById
 
-//  queryselector
+//  queryselector- te puede retornar ninguno hasta algun elemento  que concuerde con el selector que estas escribiendo
+
 
 const heading = document.querySelector('.header__texto h2') // 0 o 1 elementos
+heading.textContent = "Nuevo Heading";
 console.log(heading)
-
-// queryselectorAll
+ 
+// queryselectorAll -- retorna cero hasta todos los elementos que concuerden con el selector que estas escribiendo
 
 const enlaces = document.querySelectorAll('.navegacion a')  // retorna a todos los que concuerde con el selector
-enlaces[0].textContent = "Nuevo Texto para Enlace";
+enlaces[0].textContent = "Texto";
 enlaces[0].classList.add('nueva-clase');
 // enlaces[0].classList.remove('navegacion__enlace')
+
+
+// generar texto Html con createElement
+
 
 
 //  generar un nuevo enlace crear HTML con JS
 
 const Nuevoenlace = document.createElement('A')
-
-
-
 // generar un nuevo enlace
 
  Nuevoenlace.href = 'nuevo enlace'
 // agregar el texto
 
- Nuevoenlace.textContent = 'Un nuevo enlace';
+ Nuevoenlace.textContent = 'Alex enlace';
 
 // agregar la clase
 
@@ -37,7 +40,6 @@ Nuevoenlace.classList.add('navegacion__enlace');
 
 const navegacion = document.querySelector('.navegacion');
 navegacion.appendChild(Nuevoenlace);
-
 console.log(Nuevoenlace);
 
 // eventos
@@ -61,7 +63,6 @@ console.log(5)
 window.onscroll = function(){
     console.log('scrolling...')
 }
-
 // cual es la diferencia entre Load y DOMContentLoaded - en el caso de Load espera a que se descargue todo el HTML,imagenes etc y el DOMContenLoad solo espera a que se descargue el HTML no espera Css o img
 
 // seleccionar elementos y asociarles eventos
@@ -69,7 +70,7 @@ window.onscroll = function(){
 const btnenviar = document.querySelector('.boton--primario')
 btnenviar.addEventListener('click', function(evento){
     console.log(evento)
-    event.preventDefault()
+    evento.preventDefault()
     console.log('Enviando formulario');
 })
 

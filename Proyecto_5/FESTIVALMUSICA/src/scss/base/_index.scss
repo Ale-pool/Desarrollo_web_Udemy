@@ -1,0 +1,10 @@
+
+// vamos a defenir un custom property en SASS -- definicion de variables en Sass--
+// si quieres haceder a los contenidos o a una variable en especifico de un archivo de SASS, 
+// puedes hacerlo con el uso de @use y si se quiere aceder a toda la informacion de un archivo de SASS se puede hacer con @forward
+// a diferencia de @use que si soporta los namespaces, @forward no soporta los namespaces
+ 
+@forward 'normalize';
+@forward 'variables';
+@forward 'globales';
+ 

@@ -8,12 +8,12 @@ const sass = gulpSass(dartSass);
 
 export function css(done){
     src('./src/scss/app.scss') // buscamos el archivo scss
-        .pipe(sass()) // le decimos que lo compile
+        .pipe(sass().on('error', sass.logError)) // le decimos que lo compile
         .pipe(dest('./dist/css')); // lo guardamos en la carpeta css
     
         done(); // terminamos la tarea
 }
 
 export function Dev(){
-    watch('./src/scss/app.scss', css)
+    watch('src/scss/**/*.scss', css)
 }
